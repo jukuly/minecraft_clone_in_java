@@ -87,7 +87,7 @@ public class Level {
       for (int j = 0; j < Chunk.CHUNK_SIZE; j++) {
         int xBlock = i + x * Chunk.CHUNK_SIZE;
         int zBlock = j + z * Chunk.CHUNK_SIZE;
-        int topY = (int) Math.floor((WorldGenUtils.fractalNoise2(xBlock, zBlock, 5) + 1) * 20) + 50;
+        int topY = (int) Math.floor((WorldGenUtils.fractalNoise2(xBlock, zBlock, 6) + 1) * 30) + 35;
 
         for (int k = 0; k < topY; k++) {
           BlockType blockType = BlockType.STONE;

@@ -17,7 +17,7 @@ public class Game {
 
     this.tickRate = 20;
     this.sensitivity = 0.01;
-    this.renderDistance = 0;
+    this.renderDistance = 2;
 
     this.movementController = new MovementController(this);
     this.level = new Level(this);

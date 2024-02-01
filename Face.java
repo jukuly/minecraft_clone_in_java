@@ -42,9 +42,9 @@ public class Face {
 
     int rgb = texture.getRGB(x, y);
     if (orientation == Orientation.NORTH || orientation == Orientation.SOUTH) {
-      return RenderUtils.brightness(rgb, 0.95);
+      return RenderUtils.brightness(rgb, 0.85);
     } else if (orientation == Orientation.EAST || orientation == Orientation.WEST) {
-      return RenderUtils.brightness(rgb, 0.9);
+      return RenderUtils.brightness(rgb, 0.75);
     } else if (orientation == Orientation.UP || orientation == Orientation.DOWN) {
       return rgb;
     }

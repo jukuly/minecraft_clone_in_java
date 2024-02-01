@@ -1,5 +1,5 @@
 public class MovementController {
-  private static final double MOVEMENT_SPEED = 5; // blocks per second
+  private static final double MOVEMENT_SPEED = 15; // blocks per second
 
   private Game game;
   private Vector3 velocity;
@@ -62,8 +62,8 @@ public class MovementController {
     Vector3 v = velocity.normalise().multiply(MOVEMENT_SPEED * timeElapsed * game.getPlayer().getSpeed());
     v = new Vector3(v.getX() * Math.cos(verticalRotation) - v.getZ() * Math.sin(verticalRotation),
         v.getY(), v.getZ() * Math.cos(verticalRotation) + v.getX() * Math.sin(verticalRotation));
-    Vector3 collisionVector = game.getPlayer().getCollisionVector(v);
-    setPlayerPosition(v.add(collisionVector));
+    // Vector3 collisionVector = game.getPlayer().getCollisionVector(v);
+    setPlayerPosition(v);// .add(collisionVector));
   }
 
   private void setPlayerPosition(Vector3 offset) {
