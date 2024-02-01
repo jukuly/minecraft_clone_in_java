@@ -1,7 +1,7 @@
 # Minecraft Clone
 Minecraft Clone written in Java
 - Procedural infinite world generation with fractal perlin noise
-- Software rendered (withd the cpu)
+- Software rendered (basically uses the cpu instead of the gpu to do the rendering)
 
 To compile:
 ```
